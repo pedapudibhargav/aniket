@@ -1,0 +1,72 @@
+/* 
+ */
+ .body {
+    font-family: "Poppins", Sans-serif;
+ }
+.menu-item .sub-menu {
+  background: black;
+}
+.lottie-container > .e-con-inner {
+  position: relative;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 97px;
+}
+ .dark-mode{
+    background-color: #080808 !important;
+    color: #ffffff !important;
+ }
+ ::-moz-selection {
+    background: #146EF6;
+  }
+  
+  ::selection {
+    background: #146EF6;
+  }
+
+  .elementor-button {
+    transition: background-color .3s cubic-bezier(.165,.84,.44,1), box-shadow .3s cubic-bezier(.165,.84,.44,1);
+  }
+  .elementor-button:hover {
+    background-color: #0055d4;
+    box-shadow: 0 1px 1px rgba(8,8,8,.08), 0 1px 1px rgba(8,8,8,.2), inset 0 6px 12px rgba(255,255,255,.12), inset 0 1px 1px rgba(255,255,255,.2);
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    30% {
+      transform: translate(20px, -10px);
+    }
+    60% {
+        transform: translate(-10px, -20px);
+    }
+}
+  
+.bouncy-element {
+    animation: bounce 4s ease infinite;
+}
+
+.site-header {
+    position: fixed !important;
+    top: 0;
+    margin-bottom: 70px;
+}
+#content {
+    margin-top: 67px;
+}
+
+.parent>.e-con-inner>div:first-child { grid-area: 1 / 1 / 2 / 2; }
+.parent>.e-con-inner>div:nth-child(2) { grid-area: 1 / 2 / 2 / 4; }
+.parent>.e-con-inner>div:nth-child(3) { grid-area: 1 / 4 / 3 / 6; }
+.parent>.e-con-inner>div:nth-child(4) { grid-area: 2 / 3 / 3 / 4; }
+.parent>.e-con-inner>div:last-child { grid-area: 2 / 1 / 3 / 3; }
+@media (max-width: 768px) {
+  .parent>.e-con-inner {
+    display : flex;
+    flex-direction: column;
+  }
+}
